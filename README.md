@@ -1,32 +1,30 @@
-# ACM Research Coding Challenge (Fall 2021)
+# ACM Research Coding Challenge (Fall 2021)  - Jonathan Le
 
-## [](https://github.com/ACM-Research/Coding-Challenge-F21#no-collaboration-policy)No Collaboration Policy
+#Note: This was my first coding challenge I have ever done. I would really appreciate it if I can have feedback on what I did
+# well and what I did wrong. Thank you :)
 
-**You may not collaborate with anyone on this challenge.**  You  _are_  allowed to use Internet documentation. If you  _do_  use existing code (either from Github, Stack Overflow, or other sources),  **please cite your sources in the README**.
+#Questions
+The overall sentiment score of the text is a 0.195495 out of a maximum of 1. Since the score is above 0, the author's attitude 
+in the text is a little positve. It is not overwhelmingly positive, but a little positive. This score is a little off from what I would have predicted.
+From my feelings, I would say the text leans a little more towards the negative than the positive because of the urgency in the text. 
+However, the library I use (Textblob) determines the overall sentiment via the words, so the urgency is lost to a number and value of each word. However, the 
+sentiment score is still relatively close. My program also determines the subjectivity of the text, which is how opinionated 
+a piece of text is. The overall score is a 0.627928 out of a maximum of 1. This is a pretty high score, so the piece of text is 
+highly opininated, which I agree with.
 
-## [](https://github.com/ACM-Research/Coding-Challenge-F21#submission-procedure)Submission Procedure
+#How I arrive at my solution
+When taking upon this challenge, I had around 3 days to learn python, pandas library, and sentiment analysis. It was a difficult challenge, but 
+I had a lot of fun learning. From one of the videos I watch, I knew I wanted to use Textblob because this sentiment analysis library
+seem easy to implement for me, and it had the added bonus to include the subjectivity score, which other libraries did not have. 
+When thinking of my solution, I knew I had to import the files into a dataframe, clean up the text to remove punctuation and stop words, 
+and finally calculate the authors attitude. This was my "psydo" code, but the difficult part was implementing it. However, after a 
+hours of searching the internet and implemnting new ideas, I have the final product that complete each step I wanted. 
 
-Please follow the below instructions on how to submit your answers.
+#libraries and API
+1) Textblob - used to detemine the overall sentiment score
+2) Pandas - Used for dataframe
+3) re - used to substitude/replace words (clean up text)
 
-1.  Create a  **public**  fork of this repo and name it  `ACM-Research-Coding-Challenge-F21`. To fork this repo, click the button on the top right and click the "Fork" button.
-
-2.  Clone the fork of the repo to your computer using  `git clone [the URL of your clone]`. You may need to install Git for this (Google it).
-
-3.  Complete the Challenge based on the instructions below.
-
-4.  Submit your solution by filling out this [form](https://acmutd.typeform.com/to/zF1IcBGR).
-
-## Assessment Criteria 
-
-Submissions will be evaluated holistically and based on a combination of effort, validity of approach, analysis, adherence to the prompt, use of outside resources (encouraged), promptness of your submission, and other factors. Your approach and explanation (detailed below) is the most weighted criteria, and partial solutions are accepted. 
-
-## [](https://github.com/ACM-Research/Coding-Challenge-S21#question-one)Question One
-
-[Sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis) is a natural language processing technique that computes a sentiment score for a body of text. This sentiment score can quantify how positive, negative, or neutral the text is. The following dataset in  `input.txt`  contains a relatively large body of text.
-
-**Determine an overall sentiment score of the text in this file, explain what this score means, and contrast this score with what you expected.**  If your solution also provides different metrics about the text (magnitude, individual sentence score, etc.), feel free to add it to your explanation.   
-
-**You may use any programming language you feel most comfortable. We recommend Python because it is the easiest to implement. You're allowed to use any library/API you want to implement this**, just document which ones you used in this README file. Try to complete this as soon as possible as submissions are evaluated on a rolling basis.
-
-Regardless if you can or cannot answer the question, provide a short explanation of how you got your solution or how you think it can be solved in your README.md file. However, we highly recommend giving the challenge a try, you just might learn something new!
-
+#Citation: 
+1) <script src="https://gist.github.com/larsyencken/1440509.js"></script> --- Used this txt file as a list of stop words to clean up text
+2) https://github.com/ACM-Research/Coding-Challenge-F21 -- ACM challenge that provided me with the input.txt
